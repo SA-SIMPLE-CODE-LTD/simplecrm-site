@@ -41,11 +41,23 @@ export const SITE = {
 	}
 } as const;
 
-export type LegalDocId = 'privacy' | 'terms' | 'dpa' | 'subprocessors';
+export type LegalDocId =
+	| 'terms'
+	| 'acceptable-use'
+	| 'copyright'
+	| 'privacy'
+	| 'cookies'
+	| 'dpa'
+	| 'subprocessors'
+	| 'security';
 
 export const LEGAL_DOCS: { id: LegalDocId; title: string }[] = [
-	{ id: 'privacy', title: 'Privacy Policy' },
 	{ id: 'terms', title: 'Terms of Service' },
+	{ id: 'acceptable-use', title: 'Acceptable Use Policy' },
+	{ id: 'copyright', title: 'Copyright Policy' },
+	{ id: 'privacy', title: 'Privacy Policy' },
+	{ id: 'cookies', title: 'Cookie Policy' },
 	{ id: 'dpa', title: 'Data Processing Agreement' },
-	{ id: 'subprocessors', title: 'Subprocessors' }
+	{ id: 'subprocessors', title: 'Subprocessors' },
+	{ id: 'security', title: 'Security' }
 ];

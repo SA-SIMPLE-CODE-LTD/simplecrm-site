@@ -3,8 +3,6 @@ title: Copyright Policy
 updated: 2026-10-08
 ---
 
-> **Draft.** This text is a starting template and has not been reviewed by a lawyer. If you want the protection of the US DMCA safe harbor, register a designated agent with the US Copyright Office and name them below.
-
 {{legalName}} respects intellectual property rights and expects everyone who uses {{name}} to do the same. This policy explains how to report content in the Service that you believe infringes your copyright, and what we do when we receive a report. It is part of our [Terms of Service](/legal/terms).
 
 Most content in {{name}} is private to the customer's workspace. Reports usually concern content that a customer has made public, such as a public form or a shared link.
@@ -44,4 +42,4 @@ We will end the accounts of users who infringe others' rights repeatedly, where 
 
 ## 5. Designated agent
 
-[DESIGNATED AGENT NAME], {{legalName}}, {{address}}, {{country}}. Email: [{{abuseEmail}}](mailto:{{abuseEmail}}).
+Copyright Agent, {{legalName}}, {{address}}, {{country}}. Email: [{{abuseEmail}}](mailto:{{abuseEmail}}).

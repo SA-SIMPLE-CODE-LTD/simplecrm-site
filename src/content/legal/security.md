@@ -3,14 +3,12 @@ title: Security
 updated: 2026-10-08
 ---
 
-> **Draft.** Every measure on this page must be true in production before you publish it. Remove or change anything that is not.
-
 Your data is your business, and protecting it is ours. This page describes how we protect {{name}} and the data you store in it, and how to report a security issue.
 
 ## 1. Infrastructure
 
 - The Service runs on cloud infrastructure from the providers listed on our [Subprocessors](/legal/subprocessors) page. Their data centers hold independent certifications, such as ISO 27001 and SOC 2.
-- Customer Data is stored in [REGION].
+- Customer Data is stored in Israel (the AWS Tel Aviv region) and the European Union.
 - The production database and file storage are not reachable from the public internet, except through the application.
 
 ## 2. Encryption
@@ -53,7 +51,7 @@ If we become aware of a security incident that affects your data, we will notify
 
 ## 8. Reporting a vulnerability
 
-If you think you have found a security vulnerability in {{name}}, please write to [{{securityEmail}}](mailto:{{securityEmail}}) with the details and the steps to reproduce it. We will acknowledge your report within [3] business days and keep you informed until it is resolved.
+If you think you have found a security vulnerability in {{name}}, please write to [{{securityEmail}}](mailto:{{securityEmail}}) with the details and the steps to reproduce it. We will acknowledge your report within 3 business days and keep you informed until it is resolved.
 
 While you research, please:
 

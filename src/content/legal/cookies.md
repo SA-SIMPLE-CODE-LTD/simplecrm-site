@@ -3,8 +3,6 @@ title: Cookie Policy
 updated: 2026-10-08
 ---
 
-> **Draft.** Check this list against the cookies the production app actually sets before publishing, and update it whenever that changes.
-
 This Cookie Policy explains which cookies {{legalName}} ("**we**") uses on our website at {{url}} (the "**Site**") and in {{name}} at {{appUrl}} (the "**Service**"). It is part of our [Privacy Policy](/legal/privacy).
 
 ## 1. What are cookies?

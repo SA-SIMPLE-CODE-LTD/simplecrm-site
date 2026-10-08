@@ -1,6 +1,6 @@
 # Simple CRM — marketing site
 
-The public website for Simple CRM: the landing page and the legal hub at `/legal` (terms, acceptable use, copyright, privacy, cookies, DPA, subprocessors, security), organized like monday.com's. The platform itself lives in the separate `SimpleCRM` repo and runs on its own host (`app.<domain>`).
+The public website for Simple CRM: the landing page and the legal hub at `/legal` (terms, acceptable use, copyright, privacy, cookies, DPA, subprocessors, security), organized like monday.com's. The platform itself lives in the separate `SimpleCRM` repo and runs on its own host (`app.simplecrms.com`).
 
 SvelteKit 3 + Svelte 5 with `adapter-static`: every page is generated at build time into plain HTML in `build/`. There is no server and no database.
 
@@ -41,19 +41,19 @@ Everything goes to one Gmail inbox, `simplecodesa@gmail.com`, through "+tag" add
 
 ## Before going live
 
-1. In `src/lib/site.ts`, set `url` and `appUrl` to the real domains and fill in the company details and emails.
-2. In `src/content/legal/`, replace every `[PLACEHOLDER]`, remove the "Draft" notes, set `updated`, and have a lawyer review all eight documents.
-3. Check every statement on `security.md` and in the DPA's Annex 2 is true in production (backups, MFA on production access, encryption at rest, region), and update the domain in `static/.well-known/security.txt`.
-4. Check `subprocessors.md` against the real production setup (AWS region, Neon region, email provider).
+1. In `src/lib/site.ts`, fill in the company's registered address (the domain is set: `simplecrms.com`, app at `app.simplecrms.com`).
+2. Have a lawyer review all eight documents in `src/content/legal/`, and set `updated` when they are final. The texts follow the legal points of monday.com's documents, in our own words.
+3. Check every statement on `security.md` and in the DPA's Annex 2 is true in production (backups, MFA on production access, encryption at rest, region).
+4. Check `subprocessors.md`, `privacy.md` section 4.1 and `security.md` against the real production setup. They assume AWS Tel Aviv (`il-central-1`), Neon in Frankfurt, Cloudflare in front of the app and Resend for email.
 5. Deploy (below), then set the Google Auth Platform → Branding page to:
-   - Home page: `https://<domain>`
-   - Privacy policy: `https://<domain>/legal/privacy`
-   - Terms of service: `https://<domain>/legal/terms`
-   - Authorized domain: `<domain>`
+   - Home page: `https://simplecrms.com`
+   - Privacy policy: `https://simplecrms.com/legal/privacy`
+   - Terms of service: `https://simplecrms.com/legal/terms`
+   - Authorized domain: `simplecrms.com`
 
 ## Changing a legal document
 
-Edit the Markdown file and set `updated` to today's date. For a significant change to the privacy policy or terms, email workspace admins before it takes effect (the documents promise [30] days' notice). Git history is the record of earlier versions.
+Edit the Markdown file and set `updated` to today's date. For a significant change to the privacy policy or terms, email workspace admins before it takes effect (the documents promise 30 days' notice). Git history is the record of earlier versions.
 
 ## Deploy
 

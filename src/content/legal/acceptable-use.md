@@ -3,8 +3,6 @@ title: Acceptable Use Policy
 updated: 2026-10-08
 ---
 
-> **Draft.** This text is a starting template and has not been reviewed by a lawyer. Have it reviewed before you rely on it.
-
 This Acceptable Use Policy ("**AUP**") is part of our [Terms of Service](/legal/terms) or any other agreement under which you use {{name}} (the "**Service**"). It adds to the restrictions in that agreement. Words with a capital letter mean what they mean in the Terms. The AUP applies to every User, and to every script, integration or AI agent acting through an account.
 
 ## 1. Using the Service and our systems
@@ -23,7 +21,8 @@ You may not:
 10. use the Service to send spam or other unsolicited messages, including through automations, email notifications or forms, or to send messages to people who have opted out or whose contact details were bought or harvested;
 11. use the Service for anything illegal, fraudulent or deceptive;
 12. sell or share access to an account, or resell the Service without our written agreement;
-13. use the Service to build or benchmark a competing product.
+13. use far more storage, bandwidth or processing than normal use of your plan would need, in a way that affects the Service or other customers;
+14. use the Service to build or benchmark a competing product.
 
 ## 2. Content
 
@@ -38,7 +37,7 @@ You may not store, share or publish any content, including through public forms,
 
 ## 3. Monitoring
 
-We do not have to monitor the Service or Customer Data, and generally we do not. However, we may investigate when we receive a report or detect a possible violation, for example through automated security checks, and we may review the related content to do so.
+We do not have to monitor the Service or Customer Data, and generally we do not. We may still check at any time that the Service is used in line with this AUP. When we receive a report or detect a possible violation, for example through automated security checks, we may investigate it and review the related content.
 
 ## 4. Copyright
 

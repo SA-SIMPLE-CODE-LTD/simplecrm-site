@@ -79,13 +79,19 @@
 		margin-bottom: 8px;
 	}
 
+	/* A section label, not a link: small, faint and set off by a rule, so it never reads as clickable. */
 	.toc-heading {
-		margin: 16px 0 6px;
-		font-size: 13px;
-		font-weight: 700;
-		letter-spacing: 0.04em;
+		margin: 20px 0 6px;
+		padding-top: 14px;
+		border-top: 1px solid var(--border);
+		font-size: 11px;
+		font-weight: 600;
+		letter-spacing: 0.08em;
 		text-transform: uppercase;
 		color: var(--text-muted);
+		opacity: 0.75;
+		cursor: default;
+		user-select: none;
 	}
 
 	.toc ul {
@@ -94,7 +100,7 @@
 		padding: 0;
 		display: flex;
 		flex-wrap: wrap;
-		gap: 4px 16px;
+		gap: 2px 8px;
 	}
 
 	@media (min-width: 900px) {
@@ -103,13 +109,24 @@
 		}
 	}
 
-	.toc a {
-		color: var(--text-muted);
+	.toc ul a {
+		display: block;
+		padding: 6px 10px;
+		border-left: 3px solid transparent;
+		border-radius: 0 6px 6px 0;
+		color: var(--text);
 		text-decoration: none;
 		font-size: 15px;
 	}
 
-	.toc a[aria-current='page'] {
+	.toc ul a:hover {
+		background: var(--surface-muted);
+		color: var(--primary);
+	}
+
+	.toc ul a[aria-current='page'] {
+		border-left-color: var(--primary);
+		background: var(--surface-muted);
 		color: var(--primary);
 		font-weight: 600;
 	}

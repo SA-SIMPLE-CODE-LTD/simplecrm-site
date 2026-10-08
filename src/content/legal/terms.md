@@ -3,8 +3,6 @@ title: Terms of Service
 updated: 2026-10-08
 ---
 
-> **Draft.** This text is a starting template and has not been reviewed by a lawyer. Replace every placeholder in brackets and have it reviewed before you rely on it.
-
 Welcome to {{name}}. These Terms of Service (the "**Terms**") are a binding agreement between {{legalName}} ("**{{name}}**", "**we**", "**us**", "**our**") and you. If you accept them for an organization, such as your employer, "**you**" and "**Customer**" mean that organization, and you confirm that you are authorized to bind it.
 
 You accept these Terms when you click to agree, create a workspace or first use the Service, whichever comes first. If you do not agree, do not use the Service.
@@ -94,23 +92,23 @@ These Terms include, by reference, our [Acceptable Use Policy](/legal/acceptable
 
 **7.1 Plans.** The Service is offered on free and paid plans. Each plan's features and limits are described on our pricing page or in your order.
 
-**7.2 Fees.** Paid plans are billed in advance for each billing period (monthly or yearly), in [USD], using the payment method you give us. You authorize us and our payment provider to charge it.
+**7.2 Fees.** Paid plans are billed in advance for each billing period (monthly or yearly), in US dollars, using the payment method you give us. You authorize us and our payment provider to charge it.
 
 **7.3 Taxes.** Fees do not include taxes. You pay any applicable VAT, sales or similar taxes, except taxes on our income.
 
 **7.4 Upgrades and added users.** If you upgrade or add paid users during a billing period, we charge the pro-rated difference for the rest of that period.
 
-**7.5 Automatic renewal.** Subscriptions renew automatically for the same period unless you cancel before the renewal date in the billing settings or by writing to [{{billingEmail}}](mailto:{{billingEmail}}).
+**7.5 Automatic renewal.** Subscriptions renew automatically for the same period, at the price then in effect for your plan, unless you cancel in the billing settings or by writing to [{{billingEmail}}](mailto:{{billingEmail}}). Cancel a monthly plan before its renewal date, and a yearly plan at least 30 days before it.
 
-**7.6 Price changes.** We will give at least [30] days' notice of a price increase. It applies from your next renewal. Promotional discounts apply only for the period stated.
+**7.6 Price changes.** We will give at least 30 days' notice of a price increase. It applies from your next renewal. Promotional discounts apply only for the period stated.
 
-**7.7 Late payment.** If a payment fails and is not fixed within [14] days of our notice, we may downgrade or suspend the workspace until it is paid.
+**7.7 Late payment.** If a payment fails and is not fixed within 14 days of our notice, we may downgrade or suspend the workspace until it is paid.
 
 ## 8. Refunds and chargebacks
 
-**8.1 Refunds.** If you cancel your first paid subscription within [30] days of purchase, write to [{{billingEmail}}](mailto:{{billingEmail}}) and we will refund the unused part of it. Otherwise, fees are non-refundable, except where these Terms say so or the law requires it.
+**8.1 Refunds.** If you cancel your first paid subscription within 30 days of purchase, write to [{{billingEmail}}](mailto:{{billingEmail}}) and we will refund the unused part of it. Otherwise, fees are non-refundable, except where these Terms say so or the law requires it.
 
-**8.2 Chargebacks.** If you think a charge is wrong, contact us before disputing it with your bank. We may suspend an account while a chargeback is open.
+**8.2 Chargebacks.** If you think a charge is wrong, contact us before disputing it with your bank. We may suspend an account while a chargeback is open, and if the chargeback turns out to be unjustified, you will pay the fees and the reasonable costs it caused us.
 
 ## 9. Free plans, trials and beta features
 
@@ -126,15 +124,15 @@ These Terms include, by reference, our [Acceptable Use Policy](/legal/acceptable
 
 **10.2 Cancellation by you.** You may cancel at any time. A paid plan stays active until the end of the billing period you already paid for. Closing the workspace ends these Terms.
 
-**10.3 Termination for cause.** Either side may end these Terms if the other materially breaches them and does not fix the breach within [10] days of written notice. We may end them at once for a serious breach of section 4.3 or the Acceptable Use Policy.
+**10.3 Termination for cause.** Either side may end these Terms if the other materially breaches them and does not fix the breach within 10 days of written notice. Either side may also end them if the other becomes insolvent, goes into liquidation or receivership, or makes an arrangement with its creditors, and the proceedings are not dismissed within 45 days. We may end them at once for a serious breach of section 4.3 or the Acceptable Use Policy.
 
-**10.4 Termination by us.** We may end a free account with [30] days' notice. If we end a paid account without cause, we will refund prepaid fees for the unused period.
+**10.4 Termination by us.** We may end a free account with 30 days' notice. If we end a paid account without cause, we will refund prepaid fees for the unused period.
 
 **10.5 Suspension.** We may suspend access, in whole or in part, if it is needed to protect the Service, other customers or the public, if the law requires it, if payment is overdue, or if you break the Acceptable Use Policy. When we can, we will tell you first and give you a chance to fix the problem. We will restore access once it is fixed.
 
-**10.6 What happens to your data.** For [30] days after these Terms end, you can ask us to let you export your Customer Data. After that we delete it, as described in our [Privacy Policy](/legal/privacy) and [Data Processing Agreement](/legal/dpa).
+**10.6 What happens to your data.** For 30 days after these Terms end, you can ask us to let you export your Customer Data. After that we delete it, as described in our [Privacy Policy](/legal/privacy) and [Data Processing Agreement](/legal/dpa).
 
-**10.7 Survival.** Sections 3.2, 4, 7 (for amounts owed), 10.6, 11 to 14 and 17 to 19 continue after these Terms end.
+**10.7 Survival.** Sections 3.2, 4, 7 (for amounts owed), 10.6, 11 to 16, 20 and 21 continue after these Terms end.
 
 ## 11. Confidentiality
 
@@ -154,39 +152,55 @@ We provide the Service with reasonable skill and care. Apart from that, and to t
 
 ## 14. Indemnification
 
-**14.1 By you.** You will defend us, and pay any resulting damages, costs and reasonable legal fees, against third-party claims that arise from Customer Data, or from your or your Users' breach of these Terms or the Acceptable Use Policy.
+**14.1 By you.** You will defend us, and pay any resulting damages, costs and reasonable legal fees, against third-party claims that arise from Customer Data, or from your or your Users' breach of these Terms, the Acceptable Use Policy or the law.
 
-**14.2 By us.** We will defend you, and pay any resulting damages and costs, against third-party claims that the Service, as we provide it, infringes their intellectual property rights. If such a claim is made or seems likely, we may change the Service so it no longer infringes, get you the right to keep using it, or end your subscription and refund prepaid fees for the unused period. We have no obligation for claims caused by Customer Data, by Third-Party Services, or by use of the Service in breach of these Terms. This section is your only remedy for such claims.
+**14.2 By us.** We will defend you, and pay any resulting damages and costs, against third-party claims that the Service, as we provide it, infringes their intellectual property rights. If such a claim is made or seems likely, we may change the Service so it no longer infringes, get you the right to keep using it, or end your subscription and refund prepaid fees for the unused period. We have no obligation for claims caused by Customer Data, by Third-Party Services, by changes to the Service that we did not make, by combining the Service with products we did not provide, or by use of the Service in breach of these Terms. This section is your only remedy for such claims.
 
 **14.3 Conditions.** The side seeking protection must notify the other promptly, let it control the defense and settlement, and cooperate reasonably.
 
-## 15. Open-source components
+## 15. Your compliance with the law
+
+We do not promise that the Service meets the legal requirements of every country or industry. You are responsible for deciding whether the Service is suitable for your purposes and for using it in a way that complies with the laws that apply to you, for example on records, marketing messages and personal data. The fees reflect the allocation of risk in these Terms, and both sides agree that it is reasonable.
+
+## 16. Open-source components
 
 The Service includes open-source software. Each component is licensed under its own licence, which applies in place of these Terms where the two conflict.
 
-## 16. Export controls and sanctions
+## 17. Export controls and sanctions
 
-You will comply with applicable export control and sanctions laws. You confirm that you are not located in, and are not acting for anyone located in, a country or region under comprehensive sanctions, and that you are not on any government list of restricted parties.
+You will comply with the export control and sanctions laws that apply, including those of Israel, the United States and the European Union. You confirm that you are not located in, and are not acting for anyone located in, a country or region under comprehensive sanctions, and that you are not on any government list of restricted parties.
 
-## 17. Changes to these Terms
+## 18. Government users
 
-We may update these Terms. We will post the new version here and update the date at the top. For a material change, we will also email workspace admins or show a notice in the Service at least [30] days before it takes effect. If you continue to use the Service after that date, the new Terms apply. If you do not agree, you may cancel before that date. If you do, we will refund prepaid fees for the unused period.
+The Service is commercial computer software. If you use it for a government body, you receive only the rights that these Terms give to every other customer.
 
-## 18. Governing law and disputes
+## 19. Changes to these Terms
 
-These Terms are governed by the laws of {{jurisdiction}}, without regard to its conflict-of-law rules. The competent courts in {{courts}} have exclusive jurisdiction over any dispute about them. Either side may seek urgent injunctive relief in any competent court. Before going to court, each side will first try in good faith to resolve the dispute by writing to the other.
+We may update these Terms. We will post the new version here and update the date at the top. For a material change, we will also email workspace admins or show a notice in the Service at least 30 days before it takes effect. If you continue to use the Service after that date, the new Terms apply. If you do not agree, you may cancel before that date. If you do, we will refund prepaid fees for the unused period.
 
-## 19. General
+## 20. Governing law and disputes
+
+**20.1 Governing law.** These Terms are governed by the laws of {{jurisdiction}}, without regard to its conflict-of-law rules. The UN Convention on Contracts for the International Sale of Goods does not apply.
+
+**20.2 Courts.** The competent courts in {{courts}} have exclusive jurisdiction over any dispute about these Terms or the Service, and both sides submit to them. Either side may still seek urgent injunctive relief, or protect its intellectual property, in any competent court.
+
+**20.3 Try to resolve it first.** Before starting proceedings, the side with the complaint will send the other a written notice describing the dispute, to the address in section 22 or to the Admins' email addresses. Both sides will then try in good faith to resolve it for 30 days.
+
+**20.4 Individual claims only.** To the extent the law allows, each side may bring claims against the other only individually, and not as a plaintiff or class member in a class, collective or representative action.
+
+**20.5 Time limit.** To the extent the law allows, a claim about these Terms or the Service must be brought within two years after it arose.
+
+## 21. General
 
 - **Entire agreement.** These Terms, the documents they include and any order you sign with us are the entire agreement between us about the Service. If they conflict, a signed order prevails, then these Terms. Terms printed on your purchase orders do not apply.
-- **Assignment.** You may not transfer these Terms without our consent, except to a successor of your whole business. We may transfer them to an affiliate or a successor.
+- **Assignment.** You may not transfer these Terms without our consent, except to a successor of your whole business that is not our competitor. We may transfer them to an affiliate or a successor.
 - **Force majeure.** Neither side is responsible for a delay or failure caused by events beyond its reasonable control. This does not apply to payment obligations.
-- **Notices.** We send notices to the Admins' email addresses or show them in the Service. Send legal notices to [{{legalEmail}}](mailto:{{legalEmail}}).
-- **Independent parties.** No partnership, agency or employment relationship is created by these Terms.
-- **Severability and waiver.** If a provision cannot be enforced, the rest still applies. A delay in enforcing a right does not waive it.
+- **Notices.** We send notices to the Admins' email addresses or show them in the Service. An emailed notice counts as received 24 hours after we send it, unless we learn that it was not delivered. Send legal notices to [{{legalEmail}}](mailto:{{legalEmail}}) or to our address in section 22.
+- **Independent parties.** No partnership, agency or employment relationship is created by these Terms, and they give no rights to anyone else.
+- **Severability and waiver.** If a provision cannot be enforced, it will be applied as far as the law allows and the rest still applies. A waiver must be in writing, and a delay in enforcing a right does not waive it.
 - **Language.** These Terms are written in English. A translation is for convenience only, and the English version prevails.
 
-## 20. Contact
+## 22. Contact
 
 {{legalName}}, company number {{registrationNumber}}, {{address}}, {{country}}.
 

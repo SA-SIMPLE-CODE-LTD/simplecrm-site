@@ -14,9 +14,9 @@ const inbox = (tag: string) => `${INBOX.user}+${tag}@${INBOX.domain}`;
 export const SITE = {
 	name: 'Simple CRM',
 	/** Marketing site (this repo). No trailing slash. */
-	url: 'https://simplecrm.example',
+	url: 'https://simplecrms.com',
 	/** The platform itself. No trailing slash. */
-	appUrl: 'https://app.simplecrm.example',
+	appUrl: 'https://app.simplecrms.com',
 	tagline: 'The work OS your team already knows how to use.',
 	description:
 		'Simple CRM gives your team boards, views, dashboards, docs and automations in one place, with a monday.com-compatible API and an import from monday.com.',

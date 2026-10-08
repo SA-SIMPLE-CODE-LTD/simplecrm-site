@@ -3,10 +3,6 @@ title: Privacy Policy
 updated: 2026-10-08
 ---
 
-> **Draft.** This text is a starting template and has not been reviewed by a lawyer. Replace every placeholder in brackets and have it reviewed before you rely on it.
-
-> **Google user data.** {{name}}'s use and transfer to any other app of information received from Google APIs will adhere to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements. Section 3 explains what Google data we access and how we use, store, share, protect and delete it.
-
 This Privacy Policy explains how {{legalName}} ("**{{name}}**", "**we**", "**us**") collects, uses and shares personal data, and the rights you have. It covers personal data about:
 
 - **Visitors** to our website at {{url}} (the "**Site**");
@@ -61,9 +57,9 @@ We do not use advertising, analytics or tracking cookies, and we do not buy pers
 
 ## 3. Google user data
 
-This section applies when you use "Continue with Google" to sign in to {{name}}. It describes everything we do with data we receive from Google.
+You can sign in to {{name}} with your Google account. When you do, Google shares a small amount of information with us, and this section explains what that is and what we do with it. {{name}}'s use and transfer to any other app of information received from Google APIs will adhere to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements.
 
-**3.1 What we access.** We request only these three basic sign-in scopes: `openid`, `email` and `profile`. From them, Google sends us:
+**3.1 What we access.** We ask Google only for basic sign-in information (the `openid`, `email` and `profile` scopes). Google then sends us:
 
 - your Google account ID (a number that identifies your Google account);
 - your email address, and whether Google has verified it;
@@ -96,27 +92,25 @@ We do not use Google user data for any other purpose. In particular, we do not u
 - You can also revoke {{name}}'s access at any time in your Google Account at [myaccount.google.com/permissions](https://myaccount.google.com/permissions). After that, you can still sign in with your email address and a password; if you have never set one, use "Forgot password" on the sign-in page.
 - To delete your whole account and its data, ask your workspace admin, or write to us.
 
-**3.8 Limited Use.** {{name}}'s use and transfer to any other app of information received from Google APIs will adhere to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements.
-
 ## 4. Where data is stored, and for how long
 
-**4.1 Location.** The Service is hosted by the providers listed on our [Subprocessors](/legal/subprocessors) page, in [REGION].
+**4.1 Location.** The Service is hosted by the providers listed on our [Subprocessors](/legal/subprocessors) page, in Israel (the AWS Tel Aviv region) and the European Union, as listed on that page.
 
-**4.2 International transfers.** Some of our providers process data in other countries, including the United States. When personal data leaves the EEA, the UK, Switzerland or Israel for a country without an adequacy decision, we protect it with the European Commission's Standard Contractual Clauses (and the UK Addendum), or with the EU-U.S. Data Privacy Framework where the provider is certified.
+**4.2 International transfers.** Some of our providers process data in other countries, including the United States. The European Commission recognizes Israel as providing an adequate level of protection, so data can flow between the EU and Israel. When personal data leaves the EEA, the UK, Switzerland or Israel for a country without an adequacy decision, we protect it with the European Commission's Standard Contractual Clauses (and the UK Addendum), or with the EU-U.S. Data Privacy Framework where the provider is certified.
 
-**4.3 Retention.** We keep personal data only for as long as we need it for the purposes above.
+**4.3 Retention.** We keep personal data only for as long as we need it for the purposes above. To decide how long that is, we consider the kind of data and how sensitive it is, the risk to you, why we hold it, and how long the law, accounting rules or a possible legal claim require us to keep it. The usual periods are:
 
-| Data                           | How long                                                                                 |
-| ------------------------------ | ---------------------------------------------------------------------------------------- |
-| Account data                   | While the account is active, then deleted within [90] days of the workspace being closed |
-| Deleted items, boards and docs | 30 days in the trash, then permanently deleted                                           |
-| Activity log                   | 365 days                                                                                 |
-| Notifications                  | 180 days                                                                                 |
-| Sessions                       | Up to 30 days of inactivity, and never more than 90 days                                 |
-| Server and security logs       | Up to [90] days                                                                          |
-| Support emails                 | [3] years after the conversation ends                                                    |
-| Billing records                | As long as tax law requires, usually [7] years                                           |
-| Backups                        | Overwritten within [35] days                                                             |
+| Data                           | How long                                                                               |
+| ------------------------------ | -------------------------------------------------------------------------------------- |
+| Account data                   | While the account is active, then deleted within 90 days of the workspace being closed |
+| Deleted items, boards and docs | 30 days in the trash, then permanently deleted                                         |
+| Activity log                   | 365 days                                                                               |
+| Notifications                  | 180 days                                                                               |
+| Sessions                       | Up to 30 days of inactivity, and never more than 90 days                               |
+| Server and security logs       | Up to 90 days                                                                          |
+| Support emails                 | 3 years after the conversation ends                                                    |
+| Billing records                | As long as tax law requires, usually 7 years                                           |
+| Backups                        | Overwritten within 30 days                                                             |
 
 ## 5. Who we share data with
 
@@ -162,6 +156,8 @@ Depending on where you live, you may have the right to:
 
 **Complaints.** If you are not satisfied with our answer, you may complain to your data protection authority. In the EU, that is the authority in your country. In the UK, it is the ICO. In Israel, it is the Privacy Protection Authority.
 
+**Israel residents.** We process personal data under the Israeli Protection of Privacy Law and its Data Security Regulations. You may ask to review the data we hold about you, and to have it corrected or deleted if it is inaccurate, incomplete, unclear or outdated. You are not required by law to give us personal data, but without the data in section 1 we cannot provide the Service. For Customer Data, the customer is the database controller and we hold the data for it.
+
 **United States residents.** We do not sell or share personal data as those terms are defined in US state privacy laws, such as the California Consumer Privacy Act, and we do not use sensitive personal information for purposes that require an opt-out. In the past 12 months we collected the categories of data described in section 1, for the purposes in section 2, and disclosed them only to the recipients in section 5.
 
 ## 10. Controller and processor
@@ -180,5 +176,3 @@ Depending on where you live, you may have the right to:
 **Accessibility.** If you need this policy in another format, write to [{{supportEmail}}](mailto:{{supportEmail}}).
 
 **Contact.** {{legalName}}, company number {{registrationNumber}}, {{address}}, {{country}}. Privacy questions and requests: [{{privacyEmail}}](mailto:{{privacyEmail}}).
-
-[If required: name an EU/UK representative under Article 27 GDPR, and a Data Protection Officer.]

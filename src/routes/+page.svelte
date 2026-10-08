@@ -1,4 +1,6 @@
 <script lang="ts">
+	import mark from '#lib/assets/brand/mark.svg';
+	import markOnDark from '#lib/assets/brand/mark-on-dark.svg';
 	import Seo from '#lib/components/Seo.svelte';
 	import { SITE } from '#lib/site.js';
 
@@ -29,8 +31,8 @@
 			color: 'var(--mango)'
 		},
 		{
-			title: 'A monday.com-compatible API',
-			body: 'A GraphQL API that speaks the monday.com dialect plus a REST API with scoped keys. Existing integrations switch by changing one URL.',
+			title: 'Open APIs',
+			body: 'A GraphQL API and a REST API with scoped keys, so your own tools and integrations can read and update your boards.',
 			color: 'var(--coral)'
 		}
 	];
@@ -40,6 +42,13 @@
 
 <section class="hero">
 	<div class="container hero-inner">
+		<p class="brand-lockup">
+			<picture>
+				<source srcset={markOnDark} media="(prefers-color-scheme: dark)" />
+				<img src={mark} alt="" width="56" height="56" />
+			</picture>
+			<span>{SITE.name}</span>
+		</p>
 		<h1>
 			Your team's work,<br /><span class="accent">simply organized.</span>
 		</h1>
@@ -68,10 +77,10 @@
 
 <section class="switch" aria-labelledby="switch-title">
 	<div class="container switch-inner">
-		<h2 id="switch-title">Moving from monday.com?</h2>
+		<h2 id="switch-title">Switching from another tool?</h2>
 		<p>
-			We import your boards, items, updates and files for you. The screens and shortcuts work the
-			way your team already expects, so nobody needs retraining.
+			We import your boards, items, updates and files for you, including from monday.com, so your
+			team can pick up where it left off.
 		</p>
 		<a class="button button-primary" href="mailto:{SITE.email.support}">Plan your move</a>
 	</div>
@@ -102,6 +111,20 @@
 	.hero-inner {
 		max-width: 860px;
 		text-align: center;
+	}
+
+	.brand-lockup {
+		display: inline-flex;
+		align-items: center;
+		gap: 14px;
+		margin: 0 0 28px;
+		font-weight: 700;
+		font-size: 28px;
+		color: var(--text);
+	}
+
+	.brand-lockup img {
+		display: block;
 	}
 
 	h1 {

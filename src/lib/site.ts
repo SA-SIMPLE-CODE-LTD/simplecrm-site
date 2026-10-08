@@ -17,13 +17,13 @@ export const SITE = {
 	url: 'https://simplecrms.com',
 	/** The platform itself. No trailing slash. */
 	appUrl: 'https://app.simplecrms.com',
-	tagline: 'The work OS your team already knows how to use.',
+	tagline: 'Work management your team already knows how to use.',
 	description:
-		'Simple CRM gives your team boards, views, dashboards, docs and automations in one place, with a monday.com-compatible API and an import from monday.com.',
+		'Simple CRM gives your team boards, views, dashboards, docs and automations in one place, with open APIs and a guided import from the tools you use today.',
 	company: {
 		legalName: 'SA SIMPLE CODE LTD',
 		registrationNumber: '516820560',
-		address: '[REGISTERED ADDRESS]',
+		address: 'Ashkelon, Israel',
 		country: 'Israel',
 		/** Law that governs the terms. */
 		jurisdiction: 'the State of Israel',

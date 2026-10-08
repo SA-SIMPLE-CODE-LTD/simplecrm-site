@@ -5,13 +5,15 @@ updated: 2026-10-08
 
 > **Draft.** This text is a starting template and has not been reviewed by a lawyer. Replace every placeholder in brackets and have it reviewed before you rely on it.
 
+> **Google user data.** {{name}}'s use and transfer to any other app of information received from Google APIs will adhere to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements. Section 3 explains what Google data we access and how we use, store, share, protect and delete it.
+
 This Privacy Policy explains how {{legalName}} ("**{{name}}**", "**we**", "**us**") collects, uses and shares personal data, and the rights you have. It covers personal data about:
 
 - **Visitors** to our website at {{url}} (the "**Site**");
 - **Users** of {{name}} at {{appUrl}} (the "**Service**"): the people who have an account in a customer's workspace;
 - **Prospects and contacts**: people who write to us, or whose business we work with.
 
-**What this policy does not cover.** The boards, items, docs, files and form responses that a customer stores in the Service ("**Customer Data**") belong to that customer. We process Customer Data as the customer's processor, only on its instructions, under our [Data Processing Agreement](/legal/dpa). If your personal data is in a customer's workspace, for example because you filled in its form or you are one of its clients, that customer's privacy policy applies, and you should contact it first. See section 9.
+**What this policy does not cover.** The boards, items, docs, files and form responses that a customer stores in the Service ("**Customer Data**") belong to that customer. We process Customer Data as the customer's processor, only on its instructions, under our [Data Processing Agreement](/legal/dpa). If your personal data is in a customer's workspace, for example because you filled in its form or you are one of its clients, that customer's privacy policy applies, and you should contact it first. See section 10.
 
 ## 1. The data we collect
 
@@ -28,7 +30,7 @@ Card numbers are entered directly with our payment provider and never reach our 
 
 **Data we receive from others.**
 
-- **Google.** If you choose "Continue with Google", Google sends us your Google account ID, email address and name (see section 2.3).
+- **Google.** If you choose "Continue with Google", Google sends us basic profile information about your Google account. Section 3 explains exactly what we receive and what we do with it.
 - **Your workspace admin.** An admin who invites you gives us your email address, and may set your name, role and teams.
 
 **Data we collect automatically.**
@@ -57,15 +59,52 @@ We do not use advertising, analytics or tracking cookies, and we do not buy pers
 
 **2.2 What we do not do.** We do not sell personal data. We do not use it for targeted advertising. We do not use Customer Data to train AI models.
 
-**2.3 Google user data.** If you sign in with Google, we request only the `openid`, `email` and `profile` scopes, and use the data we receive only to sign you in. Our use and transfer of information received from Google APIs follows the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements.
+## 3. Google user data
 
-## 3. Where data is stored, and for how long
+This section applies when you use "Continue with Google" to sign in to {{name}}. It describes everything we do with data we receive from Google.
 
-**3.1 Location.** The Service is hosted by the providers listed on our [Subprocessors](/legal/subprocessors) page, in [REGION].
+**3.1 What we access.** We request only these three basic sign-in scopes: `openid`, `email` and `profile`. From them, Google sends us:
 
-**3.2 International transfers.** Some of our providers process data in other countries, including the United States. When personal data leaves the EEA, the UK, Switzerland or Israel for a country without an adequacy decision, we protect it with the European Commission's Standard Contractual Clauses (and the UK Addendum), or with the EU-U.S. Data Privacy Framework where the provider is certified.
+- your Google account ID (a number that identifies your Google account);
+- your email address, and whether Google has verified it;
+- your name;
+- the address of your Google profile picture.
 
-**3.3 Retention.** We keep personal data only for as long as we need it for the purposes above.
+We do **not** request access to your Gmail, Google Drive, Google Calendar, contacts or any other Google service, and we cannot see your Google password.
+
+**3.2 How we use it.** We use this data only to sign you in to {{name}}:
+
+- We use your **verified email address** to find the {{name}} account that a workspace admin has already invited you to. Google sign-in cannot create a new account.
+- We save your **Google account ID** in that account, so you can sign in with Google next time, and so that a different Google account with the same email address can never take it over.
+- The first time you sign in, we use your **name** as your display name in {{name}}. You can change it in your profile at any time.
+- We do not use or save your **profile picture**.
+
+We do not use Google user data for any other purpose. In particular, we do not use it for advertising, we do not sell it, we do not use it to build user profiles, and we do not use it to develop, improve or train AI or machine learning models.
+
+**3.3 How we store it.** We store only your Google account ID, in your user record in our database, which is encrypted at rest. We do not store the access token or refresh token Google issues: we use the sign-in response once, at the moment you sign in, and then discard it. Your email address and name are stored as part of your {{name}} account in the same way as for users who sign in with a password.
+
+**3.4 How we share it.** We do not sell, rent or transfer Google user data to third parties. It is processed only by our hosting and database providers listed on our [Subprocessors](/legal/subprocessors) page, only to run the Service. We may disclose it only if the law requires it, or as part of a merger or acquisition, in which case this policy continues to apply to it. Within {{name}}, other users in your workspace can see your name and email address, as they can for every user.
+
+**3.5 Human access.** Our staff do not read Google user data, except with your explicit consent (for example, to answer your support request), when it is needed for security purposes, such as investigating abuse, or to comply with the law.
+
+**3.6 How we protect it.** Sign-in with Google uses OAuth 2.0 with PKCE over encrypted connections (TLS). Data is encrypted at rest, and access to production systems is limited to the people who need it. See our [Security](/legal/security) page.
+
+**3.7 Retention and deletion.**
+
+- Your Google account ID is kept for as long as your {{name}} account exists, and is deleted together with it.
+- To unlink Google from your account, or to have your Google account ID deleted, write to [{{privacyEmail}}](mailto:{{privacyEmail}}). We will do so within 30 days.
+- You can also revoke {{name}}'s access at any time in your Google Account at [myaccount.google.com/permissions](https://myaccount.google.com/permissions). After that, you can still sign in with your email address and a password; if you have never set one, use "Forgot password" on the sign-in page.
+- To delete your whole account and its data, ask your workspace admin, or write to us.
+
+**3.8 Limited Use.** {{name}}'s use and transfer to any other app of information received from Google APIs will adhere to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements.
+
+## 4. Where data is stored, and for how long
+
+**4.1 Location.** The Service is hosted by the providers listed on our [Subprocessors](/legal/subprocessors) page, in [REGION].
+
+**4.2 International transfers.** Some of our providers process data in other countries, including the United States. When personal data leaves the EEA, the UK, Switzerland or Israel for a country without an adequacy decision, we protect it with the European Commission's Standard Contractual Clauses (and the UK Addendum), or with the EU-U.S. Data Privacy Framework where the provider is certified.
+
+**4.3 Retention.** We keep personal data only for as long as we need it for the purposes above.
 
 | Data                           | How long                                                                                 |
 | ------------------------------ | ---------------------------------------------------------------------------------------- |
@@ -79,7 +118,7 @@ We do not use advertising, analytics or tracking cookies, and we do not buy pers
 | Billing records                | As long as tax law requires, usually [7] years                                           |
 | Backups                        | Overwritten within [35] days                                                             |
 
-## 4. Who we share data with
+## 5. Who we share data with
 
 We share personal data only in these cases:
 
@@ -89,11 +128,11 @@ We share personal data only in these cases:
 - **Legal reasons.** When the law, a court order or a valid government request requires it, or to protect the rights, safety and property of our customers, the public or us. Where the law allows, we will tell the customer about a request for its data first.
 - **Business transfers.** If we are involved in a merger, acquisition or sale of assets, personal data may transfer to the new owner, and this policy will continue to apply to it.
 
-## 5. Cookies
+## 6. Cookies
 
 We use only the cookies that the Site and Service need to work, plus two that remember your display preferences. Each one is listed in our [Cookie Policy](/legal/cookies). We do not use cookies for advertising or cross-site tracking. We honor Global Privacy Control signals, although we do not sell or share personal data in the first place.
 
-## 6. Communications
+## 7. Communications
 
 **Service emails** (invitations, password resets, security alerts, billing notices, and changes to our terms) are part of the Service, and you cannot opt out of them while you have an account.
 
@@ -101,11 +140,11 @@ We use only the cookies that the Site and Service need to work, plus two that re
 
 **Product news** is sent only to customer contacts, and every message has an unsubscribe link.
 
-## 7. Security
+## 8. Security
 
 We protect personal data with encryption in transit and at rest, access controls, Argon2id password hashing, sign-in rate limiting and the other measures described on our [Security](/legal/security) page. No system is perfectly secure. If a personal data breach affects you, we will notify you and the competent authorities as the law requires.
 
-## 8. Your rights
+## 9. Your rights
 
 Depending on where you live, you may have the right to:
 
@@ -119,18 +158,18 @@ Depending on where you live, you may have the right to:
 
 **How to use them.** Many of these rights you can exercise yourself in your profile settings. For anything else, write to [{{privacyEmail}}](mailto:{{privacyEmail}}). We may need to verify your identity first. We answer within 30 days. If the request is complex, we may extend that period as the law allows, and will tell you why. An authorized agent may make a request for you if they can show that they are allowed to act for you.
 
-**Data in a customer's workspace.** If your request is about Customer Data, we will pass it to the customer that controls it (see section 9).
+**Data in a customer's workspace.** If your request is about Customer Data, we will pass it to the customer that controls it (see section 10).
 
 **Complaints.** If you are not satisfied with our answer, you may complain to your data protection authority. In the EU, that is the authority in your country. In the UK, it is the ICO. In Israel, it is the Privacy Protection Authority.
 
-**United States residents.** We do not sell or share personal data as those terms are defined in US state privacy laws, such as the California Consumer Privacy Act, and we do not use sensitive personal information for purposes that require an opt-out. In the past 12 months we collected the categories of data described in section 1, for the purposes in section 2, and disclosed them only to the recipients in section 4.
+**United States residents.** We do not sell or share personal data as those terms are defined in US state privacy laws, such as the California Consumer Privacy Act, and we do not use sensitive personal information for purposes that require an opt-out. In the past 12 months we collected the categories of data described in section 1, for the purposes in section 2, and disclosed them only to the recipients in section 5.
 
-## 9. Controller and processor
+## 10. Controller and processor
 
 - **We are the controller** of personal data about visitors, Users (account and usage data), prospects and contacts. This policy covers that data.
 - **We are a processor** for Customer Data. The customer is the controller. It decides what to store and who can see it, and we follow its instructions under the [Data Processing Agreement](/legal/dpa). If you are an individual whose data is in a customer's workspace, please contact that customer. If you contact us, we will pass your request on to it.
 
-## 10. Other notices
+## 11. Other notices
 
 **Changes to this policy.** We will post changes here and update the date at the top. If a change is significant, we will also tell workspace admins by email or in the Service before it takes effect.
 

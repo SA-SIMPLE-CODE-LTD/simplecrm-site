@@ -77,6 +77,23 @@
 	</div>
 </section>
 
+<section class="your-data" aria-labelledby="your-data-title">
+	<div class="container your-data-inner">
+		<h2 id="your-data-title">Your data stays yours</h2>
+		<p>
+			{SITE.name} is a work management app for teams. People join a workspace when an admin invites them,
+			and can sign in with a password or with their Google account. When you choose "Continue with Google",
+			we ask Google only for your name, email address and Google account ID, and we use them only to sign
+			you in to the account you were invited to. We never access your Gmail, Drive or Calendar, we never
+			sell your data, and we do not use it for advertising.
+		</p>
+		<p>
+			Read our <a href="/legal/privacy">Privacy Policy</a> and
+			<a href="/legal/terms">Terms of Service</a>.
+		</p>
+	</div>
+</section>
+
 <style>
 	.hero {
 		padding: 88px 0 72px;
@@ -185,6 +202,24 @@
 
 	.switch h2 {
 		margin-bottom: 16px;
+	}
+
+	.your-data {
+		padding: 72px 0 0;
+	}
+
+	.your-data-inner {
+		max-width: 760px;
+		text-align: center;
+	}
+
+	.your-data h2 {
+		margin-bottom: 16px;
+	}
+
+	.your-data p {
+		color: var(--text-muted);
+		margin: 0 0 16px;
 	}
 
 	.switch p {

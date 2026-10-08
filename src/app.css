@@ -1,0 +1,143 @@
+/* Colors come from the Simple CRM brand (SimpleCRM repo: src/lib/assets/brand/BRAND.md). */
+:root {
+	--paper: #fffaf3;
+	--surface: #ffffff;
+	--surface-muted: #f3f4fb;
+	--text: #28245c;
+	--text-muted: #5f5d82;
+	--border: #e6e7f2;
+	--primary: #216ef6;
+	--primary-hover: #0a5bec;
+	--on-primary: #ffffff;
+	--mango: #cb7800;
+	--coral: #ff4c39;
+	--blue: #2f7cf6;
+	--radius: 14px;
+	--max: 1120px;
+	--font-display: 'Caprasimo', Georgia, serif;
+	--font-body:
+		'Figtree', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--paper: #1b1a33;
+		--surface: #242244;
+		--surface-muted: #2c2a52;
+		--text: #f2f1fb;
+		--text-muted: #b9b7d6;
+		--border: #3a3866;
+		--primary: #4b8bf8;
+		--primary-hover: #6a9ffa;
+		--on-primary: #0e0d24;
+		--mango: #ffa31a;
+		--coral: #ff5a4e;
+		color-scheme: dark;
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	background: var(--paper);
+	color: var(--text);
+	font-family: var(--font-body);
+	font-size: 17px;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.15;
+	margin: 0 0 0.5em;
+}
+
+a {
+	color: var(--primary);
+}
+
+a:hover {
+	color: var(--primary-hover);
+}
+
+img,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+.container {
+	width: 100%;
+	max-width: var(--max);
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+@media (min-width: 720px) {
+	.container {
+		padding: 0 32px;
+	}
+}
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	min-height: 44px;
+	padding: 0 22px;
+	border-radius: 999px;
+	font-weight: 600;
+	font-size: 16px;
+	text-decoration: none;
+	transition:
+		background-color 0.15s ease,
+		border-color 0.15s ease;
+}
+
+.button-primary {
+	background: var(--primary);
+	color: var(--on-primary);
+}
+
+.button-primary:hover {
+	background: var(--primary-hover);
+	color: var(--on-primary);
+}
+
+.button-ghost {
+	border: 1px solid var(--border);
+	color: var(--text);
+	background: var(--surface);
+}
+
+.button-ghost:hover {
+	border-color: var(--text-muted);
+	color: var(--text);
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+}
+
+:focus-visible {
+	outline: 2px solid var(--primary);
+	outline-offset: 2px;
+}

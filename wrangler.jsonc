@@ -1,0 +1,12 @@
+// Cloudflare deploys the prerendered site in build/ as static assets: no Worker code runs.
+// Without this file, `wrangler deploy` tries to turn the project into a server app and fails.
+{
+	"$schema": "https://unpkg.com/wrangler@4.148.0/config-schema.json",
+	"name": "simplecrm-site",
+	"compatibility_date": "2026-10-06",
+	"assets": {
+		"directory": "./build",
+		"html_handling": "drop-trailing-slash",
+		"not_found_handling": "404-page"
+	}
+}

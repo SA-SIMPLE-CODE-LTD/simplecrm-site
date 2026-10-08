@@ -57,11 +57,11 @@ Edit the Markdown file and set `updated` to today's date. For a significant chan
 
 ## Deploy
 
-Any static host works. Recommended: **Cloudflare Pages** connected to this repo.
+Hosted on **Cloudflare Workers** (static assets, no server code), connected to this repo: every push to `main` deploys.
 
 - Build command: `npm run build`
-- Output directory: `build`
+- Deploy command: `npx wrangler deploy` (reads `wrangler.jsonc`, which uploads `build/` as static assets)
 - Environment variable: `NODE_VERSION=24.21.0`
-- Add the custom domain (root and `www`), and redirect `www` to the root domain.
+- Custom domains: `simplecrms.com` and `www.simplecrms.com`, with a redirect rule from `www` to the root domain.
 
-`static/_headers` is applied automatically by Cloudflare Pages and Netlify. On S3 + CloudFront, set the same headers with a CloudFront response headers policy.
+`static/_headers` sets the security headers, and `build/404.html` is served for unknown paths. To test the deployed setup locally: `npm run build && npx wrangler dev`.

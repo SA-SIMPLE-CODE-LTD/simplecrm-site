@@ -13,7 +13,8 @@ export default defineConfig({
 				runes: ({ filename }) =>
 					filename.split(/[/\\]/).includes('node_modules') ? undefined : true
 			},
-			adapter: adapter()
+			// 404.html: served by Cloudflare for unknown paths, and renders the site's error page.
+			adapter: adapter({ fallback: '404.html' })
 		})
 	]
 });

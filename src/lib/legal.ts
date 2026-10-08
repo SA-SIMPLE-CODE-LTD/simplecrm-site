@@ -50,7 +50,11 @@ export function loadLegalDoc(id: LegalDocId): LegalDoc | null {
 	const raw = sources[`/src/content/legal/${id}.md`];
 	if (!raw) return null;
 	const { meta, body } = parseFrontMatter(raw);
-	const filled = body.replace(/\{\{(\w+)\}\}/g, (token, key: string) => TOKENS[key] ?? token);
+	const filled = body.replace(/\{\{(\w+)\}\}/g, (token, key: string) => {
+		const value = TOKENS[key];
+		if (value === undefined) throw new Error(`Unknown token ${token} in ${id}.md`);
+		return value;
+	});
 	return {
 		title: meta.title ?? id,
 		updated: meta.updated ?? '',

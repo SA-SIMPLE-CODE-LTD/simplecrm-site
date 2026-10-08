@@ -34,7 +34,7 @@
 		<a class="brand" href="/" aria-label="{SITE.name} home">
 			<picture>
 				<source srcset={wordmarkOnDark} media="(prefers-color-scheme: dark)" />
-				<img src={wordmark} alt={SITE.name} width="160" height="32" />
+				<img src={wordmark} alt={SITE.name} width="168" height="32" />
 			</picture>
 		</a>
 		<nav aria-label="Main">

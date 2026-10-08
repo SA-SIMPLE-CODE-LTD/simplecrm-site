@@ -9,7 +9,7 @@ SvelteKit 3 + Svelte 5 with `adapter-static`: every page is generated at build t
 ```sh
 nvm use        # Node 24 (see .nvmrc)
 npm ci
-npm run dev    # http://localhost:5173 — use --port if the CRM dev server is already there
+npm run dev    # http://localhost:5180 (5173 is left to the CRM)
 ```
 
 | Task                 | Command                    |

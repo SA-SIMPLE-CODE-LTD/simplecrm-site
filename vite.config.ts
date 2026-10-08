@@ -3,6 +3,9 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+	// Not 5173: that is the CRM's port, and a CRM tab left open would poll this site for /api/v1/* (404s).
+	server: { port: 5180, strictPort: true },
+	preview: { port: 5181, strictPort: true },
 	plugins: [
 		sveltekit({
 			compilerOptions: {

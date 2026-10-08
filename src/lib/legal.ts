@@ -20,9 +20,13 @@ const TOKENS: Record<string, string> = {
 	address: SITE.company.address,
 	country: SITE.company.country,
 	jurisdiction: SITE.company.jurisdiction,
+	courts: SITE.company.courts,
 	supportEmail: SITE.email.support,
+	billingEmail: SITE.email.billing,
 	privacyEmail: SITE.email.privacy,
-	legalEmail: SITE.email.legal
+	legalEmail: SITE.email.legal,
+	securityEmail: SITE.email.security,
+	abuseEmail: SITE.email.abuse
 };
 
 export interface LegalDoc {

@@ -61,8 +61,9 @@
 		<div>
 			<p class="footer-heading">Contact</p>
 			<ul>
-				<li><a href="mailto:{SITE.email.support}">{SITE.email.support}</a></li>
-				<li><a href="mailto:{SITE.email.privacy}">{SITE.email.privacy}</a></li>
+				<li><a href="mailto:{SITE.email.support}">Support</a></li>
+				<li><a href="mailto:{SITE.email.privacy}">Privacy</a></li>
+				<li><a href="mailto:{SITE.email.security}">Report a security issue</a></li>
 			</ul>
 		</div>
 	</div>

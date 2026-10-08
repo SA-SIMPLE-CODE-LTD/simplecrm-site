@@ -2,6 +2,15 @@
  * Everything that changes when the domain or the company details are decided.
  * Values in [BRACKETS] are placeholders: replace them before going live.
  */
+
+/**
+ * One Gmail inbox for everything. Each purpose gets its own "+tag" address
+ * (simplecodesa+support@gmail.com, ...): Gmail delivers them all to the same inbox,
+ * and a filter on "to:" labels each one, so you can see what a message is about.
+ */
+const INBOX = { user: 'simplecodesa', domain: 'gmail.com' };
+const inbox = (tag: string) => `${INBOX.user}+${tag}@${INBOX.domain}`;
+
 export const SITE = {
 	name: 'Simple CRM',
 	/** Marketing site (this repo). No trailing slash. */
@@ -12,17 +21,23 @@ export const SITE = {
 	description:
 		'Simple CRM gives your team boards, views, dashboards, docs and automations in one place, with a monday.com-compatible API and an import from monday.com.',
 	company: {
-		legalName: '[COMPANY LEGAL NAME]',
-		registrationNumber: '[COMPANY NUMBER]',
+		legalName: 'SA SIMPLE CODE LTD',
+		registrationNumber: '516820560',
 		address: '[REGISTERED ADDRESS]',
-		country: '[COUNTRY]',
-		/** Courts and law that govern the terms. */
-		jurisdiction: '[JURISDICTION]'
+		country: 'Israel',
+		/** Law that governs the terms. */
+		jurisdiction: 'the State of Israel',
+		/** Courts with exclusive jurisdiction over disputes. */
+		courts: 'Tel Aviv-Jaffa, Israel'
 	},
 	email: {
-		support: 'support@simplecrm.example',
-		privacy: 'privacy@simplecrm.example',
-		legal: 'legal@simplecrm.example'
+		support: inbox('support'),
+		billing: inbox('billing'),
+		privacy: inbox('privacy'),
+		legal: inbox('legal'),
+		security: inbox('security'),
+		/** Abuse and copyright reports. */
+		abuse: inbox('abuse')
 	}
 } as const;
 

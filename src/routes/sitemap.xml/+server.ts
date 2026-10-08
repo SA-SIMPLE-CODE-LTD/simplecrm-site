@@ -4,7 +4,7 @@ import type { RequestHandler } from './$types';
 export const prerender = true;
 
 export const GET: RequestHandler = () => {
-	const paths = ['/', ...LEGAL_DOCS.map(({ id }) => `/legal/${id}`)];
+	const paths = ['/', '/legal', ...LEGAL_DOCS.map(({ id }) => `/legal/${id}`)];
 	const urls = paths
 		.map((path) => `\t<url><loc>${SITE.url}${path === '/' ? '' : path}</loc></url>`)
 		.join('\n');

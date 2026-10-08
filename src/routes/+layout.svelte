@@ -9,6 +9,9 @@
 	let { children }: LayoutProps = $props();
 
 	const year = new Date().getFullYear();
+	const FOOTER_DOCS = LEGAL_DOCS.filter(({ id }) =>
+		['terms', 'privacy', 'cookies', 'security'].includes(id)
+	);
 </script>
 
 <svelte:head>
@@ -53,7 +56,8 @@
 		<nav aria-label="Legal">
 			<p class="footer-heading">Legal</p>
 			<ul>
-				{#each LEGAL_DOCS as doc (doc.id)}
+				<li><a href="/legal">Legal overview</a></li>
+				{#each FOOTER_DOCS as doc (doc.id)}
 					<li><a href="/legal/{doc.id}">{doc.title}</a></li>
 				{/each}
 			</ul>

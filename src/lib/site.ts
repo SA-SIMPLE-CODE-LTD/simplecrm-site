@@ -51,13 +51,70 @@ export type LegalDocId =
 	| 'subprocessors'
 	| 'security';
 
-export const LEGAL_DOCS: { id: LegalDocId; title: string }[] = [
-	{ id: 'terms', title: 'Terms of Service' },
-	{ id: 'acceptable-use', title: 'Acceptable Use Policy' },
-	{ id: 'copyright', title: 'Copyright Policy' },
-	{ id: 'privacy', title: 'Privacy Policy' },
-	{ id: 'cookies', title: 'Cookie Policy' },
-	{ id: 'dpa', title: 'Data Processing Agreement' },
-	{ id: 'subprocessors', title: 'Subprocessors' },
-	{ id: 'security', title: 'Security' }
+export interface LegalDocInfo {
+	id: LegalDocId;
+	title: string;
+	/** One line for the legal hub. */
+	summary: string;
+}
+
+/** Grouped the way monday.com's legal hub groups its documents. */
+export const LEGAL_GROUPS: { title: string; docs: LegalDocInfo[] }[] = [
+	{
+		title: 'Terms & policies',
+		docs: [
+			{
+				id: 'terms',
+				title: 'Terms of Service',
+				summary: 'The agreement between us and every workspace that uses Simple CRM.'
+			},
+			{
+				id: 'acceptable-use',
+				title: 'Acceptable Use Policy',
+				summary: 'What you may not do with the Service, and how we enforce it.'
+			},
+			{
+				id: 'copyright',
+				title: 'Copyright Policy',
+				summary: 'How to report content that infringes your rights, and how we respond.'
+			}
+		]
+	},
+	{
+		title: 'Privacy',
+		docs: [
+			{
+				id: 'privacy',
+				title: 'Privacy Policy',
+				summary: 'What personal data we collect, why, and the rights you have.'
+			},
+			{
+				id: 'cookies',
+				title: 'Cookie Policy',
+				summary: 'Every cookie we set, what it is for and how long it lasts.'
+			},
+			{
+				id: 'dpa',
+				title: 'Data Processing Agreement',
+				summary: 'How we process personal data that customers store in Simple CRM.'
+			},
+			{
+				id: 'subprocessors',
+				title: 'Subprocessors',
+				summary: 'The providers that help us run the Service and where they are.'
+			}
+		]
+	},
+	{
+		title: 'Security',
+		docs: [
+			{
+				id: 'security',
+				title: 'Security',
+				summary: 'How we protect your data, and how to report a vulnerability.'
+			}
+		]
+	}
 ];
+
+export const LEGAL_DOCS: LegalDocInfo[] = LEGAL_GROUPS.flatMap(({ docs }) => docs);

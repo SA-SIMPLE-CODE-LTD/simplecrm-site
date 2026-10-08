@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Seo from '#lib/components/Seo.svelte';
-	import { LEGAL_DOCS, SITE } from '#lib/site.js';
+	import { LEGAL_GROUPS, SITE } from '#lib/site.js';
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
@@ -25,15 +25,21 @@
 
 <div class="container layout">
 	<nav class="toc" aria-label="Legal documents">
-		<ul>
-			{#each LEGAL_DOCS as doc (doc.id)}
-				<li>
-					<a href="/legal/{doc.id}" aria-current={doc.id === data.id ? 'page' : undefined}>
-						{doc.title}
-					</a>
-				</li>
+		<div class="toc-inner">
+			<a class="overview" href="/legal">← Legal overview</a>
+			{#each LEGAL_GROUPS as group (group.title)}
+				<p class="toc-heading">{group.title}</p>
+				<ul>
+					{#each group.docs as doc (doc.id)}
+						<li>
+							<a href="/legal/{doc.id}" aria-current={doc.id === data.id ? 'page' : undefined}>
+								{doc.title}
+							</a>
+						</li>
+					{/each}
+				</ul>
 			{/each}
-		</ul>
+		</div>
 	</nav>
 
 	<article>
@@ -62,10 +68,24 @@
 			gap: 56px;
 		}
 
-		.toc ul {
+		.toc-inner {
 			position: sticky;
 			top: 100px;
 		}
+	}
+
+	.overview {
+		display: inline-block;
+		margin-bottom: 8px;
+	}
+
+	.toc-heading {
+		margin: 16px 0 6px;
+		font-size: 13px;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: var(--text-muted);
 	}
 
 	.toc ul {
